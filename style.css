@@ -56,3 +56,24 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .header {
+    padding: 40px 10px;
+  }
+
+  .search-box input {
+    width: 90%;
+  }
+
+  .card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card img {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
