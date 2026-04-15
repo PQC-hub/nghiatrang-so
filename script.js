@@ -10,7 +10,9 @@ fetch('data.json')
 function render(list) {
   const container = document.getElementById('list');
   container.innerHTML = '';
-
+<p style="color:#666;font-style:italic">
+  "Một đời người – một ký ức còn mãi"
+</p>
   list.forEach(item => {
     container.innerHTML += `
       <div class="card">
