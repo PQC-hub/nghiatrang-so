@@ -14,7 +14,16 @@
     "birth": "1965",
     "death": "2022",
     "location": "Đạ Huoai, Lâm Đồng",
-    "image": "https://via.placeholder.com/150",
+    "image": "https://i.imgur.com/6VBx3io.png",
     "description": "Người mẹ hiền, luôn yêu thương gia đình."
   }
+   {
+  "id": 3,
+  "name": "Ông Nguyễn Văn C",
+  "birth": "1940",
+  "death": "2015",
+  "location": "Đạ Huoai, Lâm Đồng",
+  "image": "https://i.imgur.com/6VBx3io.png",
+  "description": "Người gắn bó cả đời với quê hương, sống nghĩa tình, được bà con kính trọng."
+}
 ]
