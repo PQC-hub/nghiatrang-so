@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
   <title>Tưởng niệm</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -23,12 +24,13 @@ fetch('data.json')
 
     document.getElementById('detail').innerHTML = `
       <div class="card" style="flex-direction: column; text-align:center;">
-        <img src="${p.image}" style="width:200px;height:200px;margin:auto;">
+        <img src="${p.image}" style="width:200px;height:200px;margin:auto;"
+             onerror="this.src='https://i.imgur.com/6VBx3io.png'">
         <h2>${p.name}</h2>
         <p>${p.birth} - ${p.death}</p>
         <p><i>${p.description}</i></p>
 
-        <button onclick="alert('🕯️ Đã thắp hương')" 
+        <button onclick="alert('🕯️ Đã thắp hương')"
           style="padding:10px 20px;border:none;border-radius:8px;background:#6b8e23;color:white;cursor:pointer;">
           🕯️ Thắp hương
         </button>
