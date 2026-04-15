@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Chi tiết</title>
+</head>
+<body>
+
+<div id="detail"></div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id');
+
+fetch('data.json')
+  .then(res => res.json())
+  .then(data => {
+    const person = data.find(p => p.id == id);
+    document.getElementById('detail').innerHTML = `
+      <h1>${person.name}</h1>
+      <img src="${person.image}">
+      <p>${person.birth} - ${person.death}</p>
+      <p>${person.location}</p>
+      <p>${person.description}</p>
+    `;
+  });
+</script>
+
+</body>
+</html>
