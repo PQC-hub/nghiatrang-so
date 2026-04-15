@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quản trị</title>
+</head>
+<body>
+
+<h2>Thêm hồ sơ</h2>
+
+<input id="name" placeholder="Tên"><br><br>
+<input id="birth" placeholder="Năm sinh"><br><br>
+<input id="death" placeholder="Năm mất"><br><br>
+<input id="image" placeholder="Link ảnh"><br><br>
+
+<textarea id="desc" placeholder="Mô tả"></textarea><br><br>
+
+<button onclick="add()">Thêm</button>
+
+<script>
+function add() {
+  const person = {
+    name: document.getElementById('name').value,
+    birth: document.getElementById('birth').value,
+    death: document.getElementById('death').value,
+    image: document.getElementById('image').value,
+    description: document.getElementById('desc').value
+  };
+
+  console.log(person);
+  alert("Đã tạo (xem console)");
+}
+</script>
+
+</body>
+</html>
