@@ -7,9 +7,13 @@ body {
 
 .header {
   text-align: center;
-  padding: 30px 10px;
-  background: linear-gradient(to right, #6b8e23, #a3b18a);
+  padding: 60px 10px;
   color: white;
+  background: 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+  background-size: cover;
+  background-position: center;
 }
 
 .header h1 {
